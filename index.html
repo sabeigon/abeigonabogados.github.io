@@ -1,219 +1,368 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description"
-    content="Somos un despacho de abogados en Pontevedra especializado en derecho penal y nuevas tecnologías. Reunimos experiencia y el conocimiento de los elementos jurídico y tecnológico para conseguir pronunciamientos favorables a nuestros clientes.">
+<style>
+/* ABEIGÓN ABOGADOS — PORTADA */
+.aa-home {
+  --aa-ink: #20272d;
+  --aa-blue: #223a50;
+  --aa-muted: #626c74;
+  --aa-line: #e3e7e9;
+  --aa-bg: #ffffff;
+  color: var(--aa-ink);
+  background: var(--aa-bg);
+  font-family: inherit;
+  line-height: 1.7;
+}
 
-  <title>Abeigón Abogados | Derecho penal y nuevas tecnologías</title>
+.aa-home * {
+  box-sizing: border-box;
+}
 
-  <!-- Styles -->
-  <link href="assets/css/page.min.css" rel="stylesheet">
+.aa-home h1,
+.aa-home h2,
+.aa-home h3,
+.aa-home p {
+  margin-top: 0;
+}
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" href="assets/img/favicon.png">
+.aa-home .aa-container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
 
-  <!--  Open Graph Tags -->
-  <meta property="og:title" content="Abeigón Abogados | Derecho penal y nuevas tecnologías">
-  <meta property="og:description"
-    content="Somos un despacho de abogados en Pontevedra especializado en derecho penal y nuevas tecnologías. Reunimos experiencia y el conocimiento de los elementos jurídico y tecnológico para conseguir pronunciamientos favorables a nuestros clientes.">
-  <meta property="og:url" content="https://www.abeigonabogados.com">
-  <meta name="twitter:card" content="summary_large_image">
+.aa-home .aa-hero {
+  padding: 100px 0 95px;
+  text-align: center;
+}
 
-</head>
+.aa-home .aa-hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
 
-<body>
+.aa-home .aa-lead {
+  max-width: 760px;
+  margin: 0 auto 32px;
+  font-size: 18px;
+  color: var(--aa-muted);
+}
 
+.aa-home .aa-button {
+  display: inline-block;
+  padding: 13px 30px;
+  background: var(--aa-blue);
+  color: #ffffff;
+  border: 1px solid var(--aa-blue);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background .2s ease;
+}
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light" data-navbar="sticky">
-    <div class="container">
+.aa-home .aa-button:hover {
+  background: #14283a;
+  color: #ffffff;
+}
 
-      <div class="navbar-left">
-        <a class="navbar-brand" href="index.html">
-          <img class="logo-light" src="assets/img/logo-abeigon.svg" alt="Logo Santiago Abeigón">
-        </a>
-      </div>
+.aa-home section.aa-section {
+  padding: 75px 0;
+}
 
-      <a class="btn btn-md btn-primary" href="#contacto">¡Pedir cita!</a>
+.aa-home .aa-section-title {
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.aa-home .aa-rule {
+  width: 45px;
+  height: 2px;
+  background: var(--aa-blue);
+  margin: 0 auto 50px;
+}
+
+.aa-home .aa-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 60px;
+  row-gap: 44px;
+}
+
+.aa-home .aa-service {
+  border-top: 1px solid var(--aa-line);
+  padding-top: 25px;
+}
+
+.aa-home .aa-service h3 {
+  font-size: 21px;
+  line-height: 1.35;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: var(--aa-blue);
+}
+
+.aa-home .aa-service p {
+  font-size: 15px;
+  color: var(--aa-muted);
+  margin-bottom: 0;
+}
+
+.aa-home .aa-approach {
+  background: #f6f7f7;
+  text-align: center;
+}
+
+.aa-home .aa-approach p {
+  max-width: 780px;
+  margin: 0 auto 18px;
+  color: var(--aa-muted);
+}
+
+.aa-home .aa-contact {
+  text-align: center;
+}
+
+.aa-home .aa-contact p {
+  color: var(--aa-muted);
+}
+
+.aa-home .aa-contact-details {
+  margin: 28px 0;
+}
+
+.aa-home .aa-contact-details a {
+  color: var(--aa-blue);
+  text-decoration: none;
+}
+
+.aa-home .aa-contact-details a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .aa-home .aa-hero {
+    padding: 65px 0;
+  }
+
+  .aa-home section.aa-section {
+    padding: 55px 0;
+  }
+
+  .aa-home .aa-grid {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .aa-home .aa-lead {
+    font-size: 16px;
+  }
+}
+</style>
+
+<main class="aa-home">
+
+  <!-- ENCABEZAMIENTO -->
+
+  <header class="aa-hero">
+    <div class="aa-container">
+
+      <h1>Asesoramiento y defensa jurídica</h1>
+
+      <p class="aa-lead">
+        Abogados en Pontevedra. Atención personalizada,
+        rigor profesional y defensa de tus derechos.
+      </p>
+
+      <p class="aa-lead">
+        Prestamos asesoramiento y defensa jurídica a
+        particulares y empresas en diferentes ámbitos
+        del Derecho, con un enfoque riguroso, práctico
+        y adaptado a las circunstancias de cada asunto.
+      </p>
+
+      <a class="aa-button" href="#contacto">
+        Solicitar cita
+      </a>
 
     </div>
-  </nav><!-- /.navbar -->
+  </header>
 
+  <!-- ÁREAS DE PRÁCTICA -->
 
-  <!-- Header -->
-  <header class="header pt-10 pb-10 bg-light">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7 mb-7 mb-lg-0">
-          <h1 class="h2 fw-500 text-primary">Abogados especialistas en Derecho Penal y Nuevas Tecnologías</h1>
-          <p class="lead-2 mt-4 mb-6">Reunimos la experiencia y el conocimiento de los elementos jurídico y tecnológico
-            para conseguir pronunciamientos favorables a nuestros clientes.</p>
-          <a class="btn btn-xl btn-primary" href="#contacto">¡Pedir cita!</a>
-        </div>
+  <section class="aa-section" id="areas-de-practica">
+    <div class="aa-container">
 
-        <div class="col-lg-5">
-          <img src="assets/img/abogado-penalista-nuevas-tecnologias.svg">
-        </div>
+      <h2 class="aa-section-title">Áreas de práctica</h2>
+      <div class="aa-rule"></div>
+
+      <div class="aa-grid">
+
+        <article class="aa-service">
+          <h3>Derecho de Familia y filiación</h3>
+          <p>
+            Asesoramiento y defensa en separaciones y
+            divorcios, guarda y custodia, pensiones de
+            alimentos, modificación de medidas y liquidación
+            del régimen económico matrimonial. Procedimientos
+            de reclamación e impugnación de la filiación.
+          </p>
+        </article>
+
+        <article class="aa-service">
+          <h3>Herencias y sucesiones</h3>
+          <p>
+            Asesoramiento en sucesiones hereditarias,
+            aceptación y partición de herencias, legítimas,
+            testamentos y resolución de conflictos entre
+            herederos. Defensa judicial de los derechos
+            hereditarios.
+          </p>
+        </article>
+
+        <article class="aa-service">
+          <h3>Derecho inmobiliario y desahucios</h3>
+          <p>
+            Asesoramiento en compraventas, arrendamientos
+            y conflictos relacionados con la propiedad
+            inmobiliaria. Procedimientos de desahucio,
+            recuperación de inmuebles ocupados en precario,
+            reclamación de rentas y división de la cosa común.
+          </p>
+        </article>
+
+        <article class="aa-service">
+          <h3>Accidentes de tráfico e indemnizaciones</h3>
+          <p>
+            Reclamación de indemnizaciones por lesiones,
+            secuelas y daños derivados de accidentes de
+            circulación. Negociación con compañías aseguradoras
+            y defensa judicial para obtener la reparación
+            que legalmente corresponda.
+          </p>
+        </article>
+
+        <article class="aa-service">
+          <h3>Ley de Segunda Oportunidad</h3>
+          <p>
+            Asesoramiento a particulares y autónomos en
+            situación de insolvencia. Tramitación de
+            procedimientos concursales y solicitudes de
+            exoneración de deudas mediante el mecanismo
+            de Segunda Oportunidad, con especial atención
+            a la situación personal y patrimonial del deudor.
+          </p>
+        </article>
+
+        <article class="aa-service">
+          <h3>Reclamaciones bancarias</h3>
+          <p>
+            Defensa de consumidores frente a prácticas y
+            cláusulas bancarias abusivas. Reclamaciones por
+            tarjetas revolving, gastos hipotecarios,
+            intereses usurarios y otras condiciones
+            contractuales contrarias a los derechos
+            de los consumidores.
+          </p>
+        </article>
+
+        <article class="aa-service">
+          <h3>Phishing y estafas informáticas</h3>
+          <p>
+            Asesoramiento y defensa de víctimas de fraudes
+            bancarios y estafas cometidas a través de Internet.
+            Análisis de operaciones fraudulentas, reclamaciones
+            frente a entidades financieras cuando procedan
+            y ejercicio de acciones civiles y penales.
+          </p>
+        </article>
+
+        <article class="aa-service">
+          <h3>Derecho Penal y litigación civil</h3>
+          <p>
+            Asistencia y defensa en procedimientos penales,
+            tanto de personas investigadas como de perjudicados
+            por delitos. Intervención en procedimientos civiles
+            relacionados con obligaciones y contratos,
+            reclamaciones de cantidad, responsabilidad civil
+            y conflictos patrimoniales.
+          </p>
+        </article>
+
       </div>
     </div>
-  </header><!-- /.header -->
+  </section>
 
+  <!-- FILOSOFÍA DE TRABAJO -->
 
-  <!-- Main Content -->
-  <main class="main-content">
+  <section class="aa-section aa-approach">
+    <div class="aa-container">
 
-    <section class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2 class="fw-500 text-primary">Principales áreas de expertise</h2>
-          <hr>
-        </header>
+      <h2 class="aa-section-title">
+        Un enfoque jurídico adaptado a cada asunto
+      </h2>
 
-        <div class="row gap-y text-center">
+      <div class="aa-rule"></div>
 
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/ciberdelitos.svg"></p>
-            <h6>Ciberdelitos</h6>
-            <p class="text-muted">Ejercemos la acusación y defensa en procesos por delitos de alta tecnología
-              especialmente complejos.</p>
-          </div>
+      <p>
+        No todos los conflictos requieren acudir a los
+        tribunales. Estudiamos las circunstancias de cada
+        caso para valorar las alternativas disponibles,
+        sus riesgos y sus consecuencias económicas.
+      </p>
 
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/identidad-digital.svg"></p>
-            <h6>Identidad digital</h6>
-            <p class="text-muted">Ayudamos a personas con proyección pública o dedicadas a profesiones que requieren
-              discreción a proteger su identidad digital en situaciones críticas que pueden afectar a su honor,
-              intimidad personal y familiar y a su propia imagen.</p>
-          </div>
+      <p>
+        Cuando la vía judicial resulta necesaria,
+        asumimos la defensa de los intereses de nuestros
+        clientes con preparación, independencia de criterio
+        y atención a las particularidades de cada
+        procedimiento.
+      </p>
 
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/prueba-electronica.svg"></p>
-            <h6>Prueba electrónica</h6>
-            <p class="text-muted">Asesoramos en la obtención y aportación de evidencias electrónicas en procesos
-              civiles, penales, contenciosos y laborales con elemento tecnológico.</p>
-          </div>
-
-        </div>
-
-        <div class="row gap-y text-center">
-
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/prueba-adn.svg"></p>
-            <h6>Prueba de ADN</h6>
-            <p class="text-muted">Somos especialistas en el tratamiento jurídico e impugnación de la prueba genética.
-              Solo aceptamos casos excepcionales.</p>
-          </div>
-
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/it-compliance.svg"></p>
-            <h6>IT Compliance + Protección de datos</h6>
-            <p class="text-muted">Prestamos servicios de consultoría y control del cumplimiento normativo en protección
-              de datos y seguridad de la información, servicios de la sociedad de la información y el comercio
-              electrónico y control del uso recursos tecnológicos en el ámbito laboral.</p>
-          </div>
-
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/indemnizaciones.svg"></p>
-            <h6>Indemnizaciones</h6>
-            <p class="text-muted">Reclamamos tu indemnización por lesiones y daños derivados de accidentes de tráfico,
-              negligencia médica, caídas en la vía pública o por intromisiones ilegítimas en el derecho al honor, la
-              intimidad y la propia imagen...</p>
-          </div>
-
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/derecho-familia.svg"></p>
-            <h6>Familia</h6>
-            <p class="text-muted">En una separación o divorcio te lo juegas todo, tus hijos, tu casa, tu sueldo, tu
-              patrimonio. Nosotros te hacemos el traje a medida.</p>
-          </div>
-
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/reclamaciones-bancarias.svg"></p>
-            <h6>Reclamaciones bancarias</h6>
-            <p class="text-muted">Recuperamos lo que te han cobrado de más por la aplicación de cláusulas abusivas, como
-              la cláusula suelo, IRPH, intereses moratorios, gastos hipotecarios, colocación de productos tóxicos,
-              tarjetas revolving...</p>
-          </div>
-
-          <div class="col-md-6 col-xl-4 feature-1">
-            <p class="feature-icon"><img src="assets/img/derecho-inmobiliario.svg"></p>
-            <h6>Derecho inmobiliario</h6>
-            <p class="text-muted">Recuperamos la posesión de tus bienes inmuebles y reclamamos la renta de tus
-              alquileres.</p>
-          </div>
-
-        </div>
-
-        <div class="text-center mt-7 mb-6">
-          <a class="btn btn-xl btn-primary" href="#contacto">¡Contáctanos!</a>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section bg-light" id="contacto">
-      <div class="container">
-        <header class="section-header">
-          <h2 class="fw-500 text-primary">Pedir cita</h2>
-          <hr>
-        </header>
-
-        <div class="row gap-y">
-
-          <div class="col-11 col-md-6 mx-auto mx-md-0">
-            <h6>Teléfono</h6>
-            <p><a class="btn-link" href="tel:671639376">671 639 376</a></p>
-          </div>
-
-          <div class="col-11 col-md-4 mx-auto">
-            <h6>Email</h6>
-            <p><a class="btn-link" href="mailto:santiagoav@avogacia.org">santiagoav@avogacia.org</a></p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-  <!-- Footer -->
-  <footer class="footer">
-
-    <div class="container">
-      <div class="row gap-y align-items-center">
-
-        <div class="col-md-3 text-center text-md-left">
-          <a href="/"><img src="assets/img/logo-abeigon.svg" style="max-width: 150px" alt="Logo Abeigón Abogados"></a>
-        </div>
-
-        <div class="col-md-9">
-          <div class="nav nav-bold nav-uppercase justify-content-center justify-content-md-end">
-            <a class="nav-link" href="/aviso-legal.html">Aviso legal</a>
-            <a class="nav-link" href="/aviso-legal.html">Política de privacidad</a>
-            <a class="nav-link" href="/#contacto">Contacto</a>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <hr class="my-0">
-        </div>
-
-        <div class="col-12 pt-2">
-          <div class="text-center text-md-left">
-            <small>© 2026 Abeigón Abogados. Todos los derechos reservados.</small>
-          </div>
-        </div>
-      </div>
     </div>
-  </footer><!-- /.footer -->
+  </section>
 
+  <!-- CONTACTO -->
 
-  <!-- Scripts -->
-  <script src="assets/js/page.min.js"></script>
-</body>
+  <section class="aa-section aa-contact" id="contacto">
+    <div class="aa-container">
 
-</html>
+      <h2 class="aa-section-title">Cuéntanos tu caso</h2>
+
+      <div class="aa-rule"></div>
+
+      <p>
+        Si necesitas asesoramiento jurídico o quieres
+        conocer las posibilidades de actuación en un
+        asunto concreto, puedes contactar con el
+        despacho para concertar una cita.
+      </p>
+
+      <p><strong>Abeigón Abogados — Pontevedra</strong></p>
+
+      <div class="aa-contact-details">
+        <p>
+          Teléfono:
+          <a href="tel:+34671639376">671 639 376</a>
+        </p>
+
+        <p>
+          Correo electrónico:
+          <a href="mailto:santiagoav@avogacia.org">
+            santiagoav@avogacia.org
+          </a>
+        </p>
+      </div>
+
+      <a class="aa-button"
+         href="mailto:santiagoav@avogacia.org?subject=Solicitud%20de%20cita">
+        Solicitar cita
+      </a>
+
+    </div>
+  </section>
+
+</main>
