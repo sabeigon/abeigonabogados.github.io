@@ -1,6 +1,11 @@
 
+<!-- ABEIGÓN ABOGADOS — PORTADA COMPLETA -->
+
+<!-- HOJA DE ESTILOS ORIGINAL -->
+<link rel="stylesheet" href="assets/css/page.min.css">
+
 <style>
-/* ABEIGÓN ABOGADOS — PORTADA */
+/* CONFIGURACIÓN GENERAL */
 
 .aa-home {
   --aa-ink: #20272d;
@@ -8,6 +13,7 @@
   --aa-muted: #626c74;
   --aa-line: #e3e7e9;
   --aa-bg: #ffffff;
+
   color: var(--aa-ink);
   background: var(--aa-bg);
   font-family: inherit;
@@ -16,6 +22,14 @@
 
 .aa-home * {
   box-sizing: border-box;
+}
+
+.aa-home h1,
+.aa-home h2,
+.aa-home h3,
+.aa-home p,
+.aa-home a {
+  font-family: inherit;
 }
 
 .aa-home h1,
@@ -62,8 +76,8 @@
 .aa-home .aa-hero h1 {
   font-size: clamp(32px, 5vw, 52px);
   font-weight: 500;
-  letter-spacing: -1px;
   line-height: 1.2;
+  letter-spacing: normal;
   margin-bottom: 25px;
 }
 
@@ -73,6 +87,8 @@
   font-size: 18px;
   color: var(--aa-muted);
 }
+
+/* BOTONES */
 
 .aa-home .aa-button {
   display: inline-block;
@@ -102,6 +118,7 @@
   font-weight: 500;
   text-align: center;
   line-height: 1.3;
+  letter-spacing: normal;
   margin-bottom: 18px;
 }
 
@@ -185,6 +202,8 @@
   border-top: 1px solid var(--aa-line);
 }
 
+/* LOGOTIPO PEQUEÑO */
+
 .aa-home .aa-footer-logo {
   margin-bottom: 25px;
 }
@@ -197,6 +216,8 @@
   margin: 0 auto;
   object-fit: contain;
 }
+
+/* ENLACES LEGALES */
 
 .aa-home .aa-footer-links {
   display: flex;
@@ -227,13 +248,14 @@
 .aa-home .aa-copyright {
   color: #8a9298;
   font-size: 12px;
-  letter-spacing: .2px;
+  letter-spacing: normal;
   margin-bottom: 0;
 }
 
-/* VERSIÓN MÓVIL */
+/* ADAPTACIÓN A MÓVILES */
 
 @media (max-width: 700px) {
+
   .aa-home .aa-hero {
     padding: 55px 0 65px;
   }
@@ -267,6 +289,7 @@
     width: 95px;
   }
 }
+
 </style>
 
 <main class="aa-home">
@@ -311,10 +334,15 @@
   <section class="aa-section" id="areas-de-practica">
     <div class="aa-container">
 
-      <h2 class="aa-section-title">Áreas de práctica</h2>
+      <h2 class="aa-section-title">
+        Áreas de práctica
+      </h2>
+
       <div class="aa-rule"></div>
 
       <div class="aa-grid">
+
+        <!-- FAMILIA -->
 
         <article class="aa-service">
           <h3>Derecho de Familia y filiación</h3>
@@ -327,6 +355,8 @@
           </p>
         </article>
 
+        <!-- HERENCIAS -->
+
         <article class="aa-service">
           <h3>Herencias y sucesiones</h3>
           <p>
@@ -337,6 +367,8 @@
             hereditarios.
           </p>
         </article>
+
+        <!-- INMOBILIARIO -->
 
         <article class="aa-service">
           <h3>Derecho inmobiliario y desahucios</h3>
@@ -349,6 +381,8 @@
           </p>
         </article>
 
+        <!-- ACCIDENTES -->
+
         <article class="aa-service">
           <h3>Accidentes de tráfico e indemnizaciones</h3>
           <p>
@@ -359,6 +393,8 @@
             que legalmente corresponda.
           </p>
         </article>
+
+        <!-- SEGUNDA OPORTUNIDAD -->
 
         <article class="aa-service">
           <h3>Ley de Segunda Oportunidad</h3>
@@ -372,6 +408,8 @@
           </p>
         </article>
 
+        <!-- RECLAMACIONES BANCARIAS -->
+
         <article class="aa-service">
           <h3>Reclamaciones bancarias</h3>
           <p>
@@ -384,6 +422,8 @@
           </p>
         </article>
 
+        <!-- ESTAFAS INFORMÁTICAS -->
+
         <article class="aa-service">
           <h3>Phishing y estafas informáticas</h3>
           <p>
@@ -394,6 +434,8 @@
             y ejercicio de acciones civiles y penales.
           </p>
         </article>
+
+        <!-- DERECHO PENAL Y CIVIL -->
 
         <article class="aa-service">
           <h3>Derecho Penal y litigación civil</h3>
@@ -445,7 +487,9 @@
   <section class="aa-section aa-contact" id="contacto">
     <div class="aa-container">
 
-      <h2 class="aa-section-title">Cuéntanos tu caso</h2>
+      <h2 class="aa-section-title">
+        Cuéntanos tu caso
+      </h2>
 
       <div class="aa-rule"></div>
 
@@ -461,6 +505,7 @@
       </p>
 
       <div class="aa-contact-details">
+
         <p>
           Teléfono:
           <a href="tel:+34671639376">
@@ -474,6 +519,7 @@
             santiagoav@avogacia.org
           </a>
         </p>
+
       </div>
 
       <a
@@ -486,13 +532,18 @@
     </div>
   </section>
 
-  <!-- PIE DE PÁGINA LEGAL -->
+  <!-- PIE DE PÁGINA -->
 
   <footer class="aa-footer">
     <div class="aa-container">
 
+      <!-- LOGOTIPO PEQUEÑO -->
+
       <div class="aa-footer-logo">
-        <a href="/" aria-label="Inicio - Abeigón Abogados">
+        <a
+          href="/"
+          aria-label="Inicio - Abeigón Abogados"
+        >
           <img
             src="assets/img/logo-abeigon.svg"
             alt="Abeigón Abogados"
@@ -501,17 +552,29 @@
         </a>
       </div>
 
-      <nav class="aa-footer-links" aria-label="Enlaces legales">
+      <!-- ENLACES LEGALES -->
+
+      <nav
+        class="aa-footer-links"
+        aria-label="Enlaces legales"
+      >
+
         <a href="/aviso-legal.html">
           Aviso legal
         </a>
 
-        <span class="aa-footer-divider" aria-hidden="true">|</span>
+        <span
+          class="aa-footer-divider"
+          aria-hidden="true"
+        >|</span>
 
         <a href="/aviso-legal.html">
           Política de cookies
         </a>
+
       </nav>
+
+      <!-- COPYRIGHT -->
 
       <p class="aa-copyright">
         © 2026 Abeigón Abogados.
