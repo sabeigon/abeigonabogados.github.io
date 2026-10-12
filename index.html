@@ -29,8 +29,27 @@
   margin: 0 auto;
 }
 
+/* LOGOTIPO */
+
+.aa-home .aa-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.aa-home .aa-logo img {
+  display: block;
+  width: 220px;
+  max-width: 75%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ENCABEZAMIENTO */
+
 .aa-home .aa-hero {
-  padding: 100px 0 95px;
+  padding: 85px 0 95px;
   text-align: center;
 }
 
@@ -66,6 +85,8 @@
   color: #ffffff;
 }
 
+/* SECCIONES */
+
 .aa-home section.aa-section {
   padding: 75px 0;
 }
@@ -84,6 +105,8 @@
   background: var(--aa-blue);
   margin: 0 auto 50px;
 }
+
+/* ÁREAS DE PRÁCTICA */
 
 .aa-home .aa-grid {
   display: grid;
@@ -111,6 +134,8 @@
   margin-bottom: 0;
 }
 
+/* FILOSOFÍA */
+
 .aa-home .aa-approach {
   background: #f6f7f7;
   text-align: center;
@@ -121,6 +146,8 @@
   margin: 0 auto 18px;
   color: var(--aa-muted);
 }
+
+/* CONTACTO */
 
 .aa-home .aa-contact {
   text-align: center;
@@ -143,9 +170,19 @@
   text-decoration: underline;
 }
 
+/* VERSIÓN MÓVIL */
+
 @media (max-width: 700px) {
   .aa-home .aa-hero {
-    padding: 65px 0;
+    padding: 55px 0 65px;
+  }
+
+  .aa-home .aa-logo {
+    margin-bottom: 35px;
+  }
+
+  .aa-home .aa-logo img {
+    width: 185px;
   }
 
   .aa-home section.aa-section {
@@ -165,10 +202,19 @@
 
 <main class="aa-home">
 
-  <!-- ENCABEZAMIENTO -->
+  <!-- ENCABEZAMIENTO CON LOGOTIPO -->
 
   <header class="aa-hero">
     <div class="aa-container">
+
+      <div class="aa-logo">
+        <a href="/" aria-label="Inicio - Abeigón Abogados">
+          <img
+            src="assets/img/logo-abeigon.svg"
+            alt="Abeigón Abogados"
+          >
+        </a>
+      </div>
 
       <h1>Asesoramiento y defensa jurídica</h1>
 
@@ -341,12 +387,16 @@
         despacho para concertar una cita.
       </p>
 
-      <p><strong>Abeigón Abogados — Pontevedra</strong></p>
+      <p>
+        <strong>Abeigón Abogados — Pontevedra</strong>
+      </p>
 
       <div class="aa-contact-details">
         <p>
           Teléfono:
-          <a href="tel:+34671639376">671 639 376</a>
+          <a href="tel:+34671639376">
+            671 639 376
+          </a>
         </p>
 
         <p>
@@ -357,8 +407,10 @@
         </p>
       </div>
 
-      <a class="aa-button"
-         href="mailto:santiagoav@avogacia.org?subject=Solicitud%20de%20cita">
+      <a
+        class="aa-button"
+        href="mailto:santiagoav@avogacia.org?subject=Solicitud%20de%20cita"
+      >
         Solicitar cita
       </a>
 
