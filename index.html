@@ -1,6 +1,7 @@
 
 <style>
 /* ABEIGÓN ABOGADOS — PORTADA */
+
 .aa-home {
   --aa-ink: #20272d;
   --aa-blue: #223a50;
@@ -29,19 +30,24 @@
   margin: 0 auto;
 }
 
-/* LOGOTIPO */
+/* LOGOTIPO PRINCIPAL */
 
 .aa-home .aa-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
+}
+
+.aa-home .aa-logo a {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .aa-home .aa-logo img {
   display: block;
-  width: 220px;
-  max-width: 75%;
+  width: 340px;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -134,7 +140,7 @@
   margin-bottom: 0;
 }
 
-/* FILOSOFÍA */
+/* FILOSOFÍA DE TRABAJO */
 
 .aa-home .aa-approach {
   background: #f6f7f7;
@@ -170,6 +176,61 @@
   text-decoration: underline;
 }
 
+/* PIE DE PÁGINA */
+
+.aa-home .aa-footer {
+  padding: 50px 20px 35px;
+  text-align: center;
+  background: #ffffff;
+  border-top: 1px solid var(--aa-line);
+}
+
+.aa-home .aa-footer-logo {
+  margin-bottom: 25px;
+}
+
+.aa-home .aa-footer-logo img {
+  display: block;
+  width: 105px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.aa-home .aa-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.aa-home .aa-footer-links a {
+  color: var(--aa-muted);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.aa-home .aa-footer-links a:hover {
+  color: var(--aa-blue);
+  text-decoration: underline;
+}
+
+.aa-home .aa-footer-divider {
+  color: #c4cbd0;
+  font-size: 12px;
+}
+
+.aa-home .aa-copyright {
+  color: #8a9298;
+  font-size: 12px;
+  letter-spacing: .2px;
+  margin-bottom: 0;
+}
+
 /* VERSIÓN MÓVIL */
 
 @media (max-width: 700px) {
@@ -182,7 +243,7 @@
   }
 
   .aa-home .aa-logo img {
-    width: 185px;
+    width: 270px;
   }
 
   .aa-home section.aa-section {
@@ -196,6 +257,14 @@
 
   .aa-home .aa-lead {
     font-size: 16px;
+  }
+
+  .aa-home .aa-footer {
+    padding: 40px 15px 30px;
+  }
+
+  .aa-home .aa-footer-logo img {
+    width: 95px;
   }
 }
 </style>
@@ -416,5 +485,40 @@
 
     </div>
   </section>
+
+  <!-- PIE DE PÁGINA LEGAL -->
+
+  <footer class="aa-footer">
+    <div class="aa-container">
+
+      <div class="aa-footer-logo">
+        <a href="/" aria-label="Inicio - Abeigón Abogados">
+          <img
+            src="assets/img/logo-abeigon.svg"
+            alt="Abeigón Abogados"
+            loading="lazy"
+          >
+        </a>
+      </div>
+
+      <nav class="aa-footer-links" aria-label="Enlaces legales">
+        <a href="/aviso-legal.html">
+          Aviso legal
+        </a>
+
+        <span class="aa-footer-divider" aria-hidden="true">|</span>
+
+        <a href="/aviso-legal.html">
+          Política de cookies
+        </a>
+      </nav>
+
+      <p class="aa-copyright">
+        © 2026 Abeigón Abogados.
+        Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
 
 </main>
