@@ -1,37 +1,38 @@
 
-<!-- ABEIGÓN ABOGADOS — PORTADA RESPONSIVE -->
+<!DOCTYPE html>
+<html lang="es">
 
-<!--
-IMPORTANTE:
-La etiqueta viewport debe estar en el HEAD
-de la página. Si ya existe, no la dupliques.
--->
+<head>
+<meta charset="UTF-8">
 <meta name="viewport"
       content="width=device-width, initial-scale=1">
 
-<!-- TIPOGRAFÍA Y ESTILOS ORIGINALES -->
+<title>Abogados en Pontevedra | Abeigón Abogados</title>
+
+<meta name="description"
+content="Abogados en Pontevedra. Derecho de familia, herencias, desahucios, accidentes de tráfico, segunda oportunidad, reclamaciones bancarias y estafas informáticas.">
+
 <link rel="stylesheet" href="assets/css/page.min.css">
 
 <style>
-/* ==========================================
-   ABEIGÓN ABOGADOS
-   CONFIGURACIÓN GENERAL
-========================================== */
+
+/* =====================================
+   ABEIGÓN ABOGADOS — DISEÑO RESPONSIVE
+===================================== */
 
 .aa-home {
   --aa-ink: #20272d;
   --aa-blue: #223a50;
   --aa-muted: #626c74;
   --aa-line: #e3e7e9;
-  --aa-bg: #ffffff;
 
+  width: 100%;
+  max-width: 100%;
   color: var(--aa-ink);
-  background: var(--aa-bg);
+  background: #ffffff;
   font-family: inherit;
   font-size: 17px;
   line-height: 1.7;
-  width: 100%;
-  max-width: 100%;
   overflow-wrap: break-word;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -65,9 +66,41 @@ de la página. Si ya existe, no la dupliques.
   margin-right: auto;
 }
 
-/* ==========================================
-   LOGOTIPO PRINCIPAL
-========================================== */
+/* ICONOS LUCIDE */
+
+.aa-home .aa-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.aa-home .aa-icon-section {
+  width: 30px;
+  height: 30px;
+  color: var(--aa-blue);
+  margin: 0 auto 22px;
+}
+
+.aa-home .aa-icon-service {
+  width: 24px;
+  height: 24px;
+  color: var(--aa-blue);
+  margin-top: 3px;
+}
+
+.aa-home .aa-icon-contact {
+  width: 21px;
+  height: 21px;
+  color: var(--aa-blue);
+}
+
+/* LOGOTIPO PRINCIPAL */
 
 .aa-home .aa-logo {
   display: flex;
@@ -89,9 +122,7 @@ de la página. Si ya existe, no la dupliques.
   object-fit: contain;
 }
 
-/* ==========================================
-   ENCABEZAMIENTO
-========================================== */
+/* ENCABEZAMIENTO */
 
 .aa-home .aa-hero {
   padding: 85px 0 95px;
@@ -115,9 +146,7 @@ de la página. Si ya existe, no la dupliques.
   color: var(--aa-muted);
 }
 
-/* ==========================================
-   BOTONES
-========================================== */
+/* BOTONES */
 
 .aa-home .aa-button {
   display: inline-flex;
@@ -146,9 +175,7 @@ de la página. Si ya existe, no la dupliques.
   outline-offset: 4px;
 }
 
-/* ==========================================
-   SECCIONES
-========================================== */
+/* SECCIONES */
 
 .aa-home section.aa-section {
   padding: 75px 0;
@@ -171,9 +198,7 @@ de la página. Si ya existe, no la dupliques.
   margin: 0 auto 50px;
 }
 
-/* ==========================================
-   ÁREAS DE PRÁCTICA
-========================================== */
+/* ÁREAS DE PRÁCTICA */
 
 .aa-home .aa-grid {
   display: grid;
@@ -188,11 +213,18 @@ de la página. Si ya existe, no la dupliques.
   padding-top: 25px;
 }
 
+.aa-home .aa-service-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-bottom: 14px;
+}
+
 .aa-home .aa-service h3 {
   font-size: 21px;
   line-height: 1.4;
   font-weight: 500;
-  margin-bottom: 14px;
+  margin: 0;
   color: var(--aa-blue);
 }
 
@@ -203,9 +235,7 @@ de la página. Si ya existe, no la dupliques.
   margin-bottom: 0;
 }
 
-/* ==========================================
-   FILOSOFÍA DE TRABAJO
-========================================== */
+/* FILOSOFÍA */
 
 .aa-home .aa-approach {
   background: #f6f7f7;
@@ -224,9 +254,7 @@ de la página. Si ya existe, no la dupliques.
   margin-bottom: 0;
 }
 
-/* ==========================================
-   CONTACTO
-========================================== */
+/* CONTACTO */
 
 .aa-home .aa-contact {
   text-align: center;
@@ -239,26 +267,35 @@ de la página. Si ya existe, no la dupliques.
 }
 
 .aa-home .aa-contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
   margin: 30px 0;
 }
 
-.aa-home .aa-contact-details p {
-  margin-bottom: 12px;
+.aa-home .aa-contact-entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  max-width: 100%;
+  min-width: 0;
 }
 
-.aa-home .aa-contact-details a {
+.aa-home .aa-contact-entry a,
+.aa-home .aa-contact-entry span {
   color: var(--aa-blue);
   text-decoration: none;
+  font-size: 17px;
   overflow-wrap: anywhere;
 }
 
-.aa-home .aa-contact-details a:hover {
+.aa-home .aa-contact-entry a:hover {
   text-decoration: underline;
 }
 
-/* ==========================================
-   PIE DE PÁGINA
-========================================== */
+/* PIE DE PÁGINA */
 
 .aa-home .aa-footer {
   padding: 50px 20px 35px;
@@ -266,8 +303,6 @@ de la página. Si ya existe, no la dupliques.
   background: #ffffff;
   border-top: 1px solid var(--aa-line);
 }
-
-/* LOGOTIPO PEQUEÑO */
 
 .aa-home .aa-footer-logo {
   margin-bottom: 25px;
@@ -281,8 +316,6 @@ de la página. Si ya existe, no la dupliques.
   margin: 0 auto;
   object-fit: contain;
 }
-
-/* ENLACES LEGALES */
 
 .aa-home .aa-footer-links {
   display: flex;
@@ -300,7 +333,6 @@ de la página. Si ya existe, no la dupliques.
   color: var(--aa-muted);
   font-size: 14px;
   text-decoration: none;
-  transition: color .2s ease;
 }
 
 .aa-home .aa-footer-links a:hover {
@@ -321,10 +353,7 @@ de la página. Si ya existe, no la dupliques.
   margin-bottom: 0;
 }
 
-/* ==========================================
-   TABLET
-   HASTA 900 PX
-========================================== */
+/* TABLET */
 
 @media screen and (max-width: 900px) {
 
@@ -346,10 +375,7 @@ de la página. Si ya existe, no la dupliques.
   }
 }
 
-/* ==========================================
-   MÓVILES
-   HASTA 767 PX
-========================================== */
+/* MÓVILES */
 
 @media screen and (max-width: 767px) {
 
@@ -363,8 +389,6 @@ de la página. Si ya existe, no la dupliques.
     max-width: 540px;
   }
 
-  /* ENCABEZAMIENTO */
-
   .aa-home .aa-hero {
     padding: 44px 0 55px;
   }
@@ -376,15 +400,12 @@ de la página. Si ya existe, no la dupliques.
   .aa-home .aa-logo img {
     width: 315px;
     max-width: 100%;
-    height: auto;
   }
 
   .aa-home .aa-hero h1 {
     font-size: 32px;
     line-height: 1.22;
-    font-weight: 500;
     margin-bottom: 25px;
-    letter-spacing: normal;
   }
 
   .aa-home .aa-lead {
@@ -392,8 +413,6 @@ de la página. Si ya existe, no la dupliques.
     line-height: 1.7;
     margin-bottom: 25px;
   }
-
-  /* BOTONES */
 
   .aa-home .aa-button {
     width: 100%;
@@ -403,8 +422,6 @@ de la página. Si ya existe, no la dupliques.
     font-size: 17px;
   }
 
-  /* SECCIONES */
-
   .aa-home section.aa-section {
     padding: 52px 0;
   }
@@ -413,15 +430,17 @@ de la página. Si ya existe, no la dupliques.
     font-size: 29px;
     line-height: 1.3;
     margin-bottom: 20px;
-    padding: 0 4px;
   }
 
   .aa-home .aa-rule {
-    width: 45px;
     margin-bottom: 36px;
   }
 
-  /* ÁREAS DE PRÁCTICA */
+  .aa-home .aa-icon-section {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
 
   .aa-home .aa-grid {
     grid-template-columns: minmax(0, 1fr);
@@ -433,10 +452,20 @@ de la página. Si ya existe, no la dupliques.
     padding-top: 22px;
   }
 
+  .aa-home .aa-service-heading {
+    gap: 12px;
+    margin-bottom: 13px;
+  }
+
+  .aa-home .aa-icon-service {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+  }
+
   .aa-home .aa-service h3 {
     font-size: 22px;
     line-height: 1.35;
-    margin-bottom: 13px;
   }
 
   .aa-home .aa-service p {
@@ -444,15 +473,11 @@ de la página. Si ya existe, no la dupliques.
     line-height: 1.75;
   }
 
-  /* FILOSOFÍA */
-
   .aa-home .aa-approach p {
     font-size: 17.5px;
     line-height: 1.75;
     margin-bottom: 22px;
   }
-
-  /* CONTACTO */
 
   .aa-home .aa-contact p {
     font-size: 17.5px;
@@ -460,30 +485,21 @@ de la página. Si ya existe, no la dupliques.
   }
 
   .aa-home .aa-contact-details {
-    margin: 25px 0 30px;
+    gap: 19px;
+    margin: 26px 0 31px;
   }
 
-  .aa-home .aa-contact-details p {
-    margin-bottom: 14px;
+  .aa-home .aa-contact-entry a,
+  .aa-home .aa-contact-entry span {
+    font-size: 17px;
   }
-
-  /* PIE DE PÁGINA */
 
   .aa-home .aa-footer {
     padding: 42px 18px 30px;
   }
 
-  .aa-home .aa-footer-logo {
-    margin-bottom: 20px;
-  }
-
   .aa-home .aa-footer-logo img {
     width: 100px;
-  }
-
-  .aa-home .aa-footer-links {
-    gap: 12px;
-    margin-bottom: 15px;
   }
 
   .aa-home .aa-footer-links a {
@@ -492,14 +508,10 @@ de la página. Si ya existe, no la dupliques.
 
   .aa-home .aa-copyright {
     font-size: 13.5px;
-    line-height: 1.7;
   }
 }
 
-/* ==========================================
-   MÓVILES PEQUEÑOS
-   IPHONE SE Y SIMILARES
-========================================== */
+/* MÓVILES PEQUEÑOS */
 
 @media screen and (max-width: 390px) {
 
@@ -532,26 +544,152 @@ de la página. Si ya existe, no la dupliques.
   .aa-home .aa-lead {
     font-size: 17.5px;
   }
+
+  .aa-home .aa-contact-entry a,
+  .aa-home .aa-contact-entry span {
+    font-size: 15.5px;
+  }
 }
 
 </style>
+</head>
 
-<!-- ======================================
-     CONTENIDO DE LA PORTADA
-====================================== -->
+<body style="margin:0">
+
+<!--
+LUCIDE ICONS — SVG
+Lucide Icons and Contributors
+Licencia ISC: https://lucide.dev/license
+
+Copyright (c) 2026 Lucide Icons and Contributors.
+Permission to use, copy, modify, and/or distribute
+this software for any purpose with or without fee
+is hereby granted, provided that the above copyright
+notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR
+DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE
+FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+-->
+
+<!-- BIBLIOTECA INTERNA DE ICONOS SVG -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     style="position:absolute;width:0;height:0;overflow:hidden"
+     aria-hidden="true" focusable="false">
+
+  <!-- BRIEFCASE BUSINESS -->
+  <symbol id="aa-ico-briefcase" viewBox="0 0 24 24">
+    <rect x="2" y="6" width="20" height="15" rx="2"/>
+    <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+    <path d="M2 12a20 20 0 0 0 20 0"/>
+    <path d="M12 12v2"/>
+  </symbol>
+
+  <!-- USERS ROUND -->
+  <symbol id="aa-ico-users" viewBox="0 0 24 24">
+    <circle cx="9" cy="7" r="4"/>
+    <path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/>
+    <path d="M16 3.1a4 4 0 0 1 0 7.8"/>
+    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+  </symbol>
+
+  <!-- SCROLL TEXT -->
+  <symbol id="aa-ico-scroll" viewBox="0 0 24 24">
+    <path d="M8 21h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H6"/>
+    <path d="M2 6h4V3a2 2 0 0 0-4 0v15a3 3 0 0 0 3 3h3"/>
+    <path d="M10 8h8"/>
+    <path d="M10 12h8"/>
+    <path d="M10 16h5"/>
+  </symbol>
+
+  <!-- HOUSE -->
+  <symbol id="aa-ico-house" viewBox="0 0 24 24">
+    <path d="m3 10 9-7 9 7v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+    <path d="M9 21v-8h6v8"/>
+  </symbol>
+
+  <!-- CAR FRONT -->
+  <symbol id="aa-ico-car" viewBox="0 0 24 24">
+    <path d="M5 17 4 19v2h2v-2h12v2h2v-2l-1-2"/>
+    <path d="M5 17h14l2-5-2-7H5l-2 7 2 5Z"/>
+    <path d="M5 11h14"/>
+    <path d="M7 14h1"/>
+    <path d="M16 14h1"/>
+  </symbol>
+
+  <!-- REFRESH CW -->
+  <symbol id="aa-ico-refresh" viewBox="0 0 24 24">
+    <path d="M20 11a8.1 8.1 0 0 0-15.5-2M4 4v5h5"/>
+    <path d="M4 13a8.1 8.1 0 0 0 15.5 2M20 20v-5h-5"/>
+  </symbol>
+
+  <!-- LANDMARK -->
+  <symbol id="aa-ico-landmark" viewBox="0 0 24 24">
+    <path d="m3 9 9-6 9 6"/>
+    <path d="M3 9h18"/>
+    <path d="M5 21V9"/>
+    <path d="M9 21V9"/>
+    <path d="M15 21V9"/>
+    <path d="M19 21V9"/>
+    <path d="M3 21h18"/>
+  </symbol>
+
+  <!-- SHIELD ALERT -->
+  <symbol id="aa-ico-shield" viewBox="0 0 24 24">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+    <path d="M12 8v4"/>
+    <path d="M12 16h.01"/>
+  </symbol>
+
+  <!-- SCALE -->
+  <symbol id="aa-ico-scale" viewBox="0 0 24 24">
+    <path d="M12 3v18"/>
+    <path d="M4 7h16"/>
+    <path d="M7 21h10"/>
+    <path d="m2 16 3-9 3 9"/>
+    <path d="m16 16 3-9 3 9"/>
+    <path d="M2 16a3 3 0 0 0 6 0"/>
+    <path d="M16 16a3 3 0 0 0 6 0"/>
+  </symbol>
+
+  <!-- PHONE -->
+  <symbol id="aa-ico-phone" viewBox="0 0 24 24">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.34 1.91.65 2.81a2 2 0 0 1-.45 2.11L8.04 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.31 1.85.53 2.81.65A2 2 0 0 1 22 16.92z"/>
+  </symbol>
+
+  <!-- MAIL -->
+  <symbol id="aa-ico-mail" viewBox="0 0 24 24">
+    <rect x="2" y="4" width="20" height="16" rx="2"/>
+    <path d="m22 7-10 6L2 7"/>
+  </symbol>
+
+  <!-- MAP PIN -->
+  <symbol id="aa-ico-map" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+    <circle cx="12" cy="10" r="2.5"/>
+  </symbol>
+
+</svg>
 
 <main class="aa-home">
 
-  <!-- ENCABEZAMIENTO -->
+  <!-- ===================================
+       ENCABEZAMIENTO
+  ==================================== -->
 
   <header class="aa-hero">
     <div class="aa-container">
 
-      <!-- LOGOTIPO GRANDE -->
-
       <div class="aa-logo">
-        <a href="/"
-           aria-label="Inicio - Abeigón Abogados">
+        <a href="/" aria-label="Inicio - Abeigón Abogados">
           <img
             src="assets/img/logo-abeigon.svg"
             alt="Abeigón Abogados"
@@ -559,9 +697,7 @@ de la página. Si ya existe, no la dupliques.
         </a>
       </div>
 
-      <h1>
-        Asesoramiento y defensa jurídica
-      </h1>
+      <h1>Asesoramiento y defensa jurídica</h1>
 
       <p class="aa-lead">
         Abogados en Pontevedra. Atención personalizada,
@@ -582,10 +718,19 @@ de la página. Si ya existe, no la dupliques.
     </div>
   </header>
 
-  <!-- ÁREAS DE PRÁCTICA -->
+  <!-- ===================================
+       ÁREAS DE PRÁCTICA
+  ==================================== -->
 
   <section class="aa-section" id="areas-de-practica">
     <div class="aa-container">
+
+      <!-- ICONO DEL ENCABEZAMIENTO -->
+
+      <svg class="aa-icon aa-icon-section"
+           aria-hidden="true">
+        <use href="#aa-ico-briefcase"></use>
+      </svg>
 
       <h2 class="aa-section-title">
         Áreas de práctica
@@ -598,7 +743,13 @@ de la página. Si ya existe, no la dupliques.
         <!-- FAMILIA -->
 
         <article class="aa-service">
-          <h3>Derecho de Familia y filiación</h3>
+          <div class="aa-service-heading">
+            <svg class="aa-icon aa-icon-service"
+                 aria-hidden="true">
+              <use href="#aa-ico-users"></use>
+            </svg>
+            <h3>Derecho de Familia y filiación</h3>
+          </div>
           <p>
             Asesoramiento y defensa en separaciones y
             divorcios, guarda y custodia, pensiones de
@@ -611,7 +762,13 @@ de la página. Si ya existe, no la dupliques.
         <!-- HERENCIAS -->
 
         <article class="aa-service">
-          <h3>Herencias y sucesiones</h3>
+          <div class="aa-service-heading">
+            <svg class="aa-icon aa-icon-service"
+                 aria-hidden="true">
+              <use href="#aa-ico-scroll"></use>
+            </svg>
+            <h3>Herencias y sucesiones</h3>
+          </div>
           <p>
             Asesoramiento en sucesiones hereditarias,
             aceptación y partición de herencias, legítimas,
@@ -624,7 +781,13 @@ de la página. Si ya existe, no la dupliques.
         <!-- INMOBILIARIO -->
 
         <article class="aa-service">
-          <h3>Derecho inmobiliario y desahucios</h3>
+          <div class="aa-service-heading">
+            <svg class="aa-icon aa-icon-service"
+                 aria-hidden="true">
+              <use href="#aa-ico-house"></use>
+            </svg>
+            <h3>Derecho inmobiliario y desahucios</h3>
+          </div>
           <p>
             Asesoramiento en compraventas, arrendamientos
             y conflictos relacionados con la propiedad
@@ -637,9 +800,15 @@ de la página. Si ya existe, no la dupliques.
         <!-- ACCIDENTES -->
 
         <article class="aa-service">
-          <h3>
-            Accidentes de tráfico e indemnizaciones
-          </h3>
+          <div class="aa-service-heading">
+            <svg class="aa-icon aa-icon-service"
+                 aria-hidden="true">
+              <use href="#aa-ico-car"></use>
+            </svg>
+            <h3>
+              Accidentes de tráfico e indemnizaciones
+            </h3>
+          </div>
           <p>
             Reclamación de indemnizaciones por lesiones,
             secuelas y daños derivados de accidentes de
@@ -652,7 +821,13 @@ de la página. Si ya existe, no la dupliques.
         <!-- SEGUNDA OPORTUNIDAD -->
 
         <article class="aa-service">
-          <h3>Ley de Segunda Oportunidad</h3>
+          <div class="aa-service-heading">
+            <svg class="aa-icon aa-icon-service"
+                 aria-hidden="true">
+              <use href="#aa-ico-refresh"></use>
+            </svg>
+            <h3>Ley de Segunda Oportunidad</h3>
+          </div>
           <p>
             Asesoramiento a particulares y autónomos en
             situación de insolvencia. Tramitación de
@@ -666,7 +841,13 @@ de la página. Si ya existe, no la dupliques.
         <!-- RECLAMACIONES BANCARIAS -->
 
         <article class="aa-service">
-          <h3>Reclamaciones bancarias</h3>
+          <div class="aa-service-heading">
+            <svg class="aa-icon aa-icon-service"
+                 aria-hidden="true">
+              <use href="#aa-ico-landmark"></use>
+            </svg>
+            <h3>Reclamaciones bancarias</h3>
+          </div>
           <p>
             Defensa de consumidores frente a prácticas y
             cláusulas bancarias abusivas. Reclamaciones por
@@ -680,7 +861,13 @@ de la página. Si ya existe, no la dupliques.
         <!-- ESTAFAS INFORMÁTICAS -->
 
         <article class="aa-service">
-          <h3>Phishing y estafas informáticas</h3>
+          <div class="aa-service-heading">
+            <svg class="aa-icon aa-icon-service"
+                 aria-hidden="true">
+              <use href="#aa-ico-shield"></use>
+            </svg>
+            <h3>Phishing y estafas informáticas</h3>
+          </div>
           <p>
             Asesoramiento y defensa de víctimas de fraudes
             bancarios y estafas cometidas a través de Internet.
@@ -693,7 +880,13 @@ de la página. Si ya existe, no la dupliques.
         <!-- DERECHO PENAL Y CIVIL -->
 
         <article class="aa-service">
-          <h3>Derecho Penal y litigación civil</h3>
+          <div class="aa-service-heading">
+            <svg class="aa-icon aa-icon-service"
+                 aria-hidden="true">
+              <use href="#aa-ico-scale"></use>
+            </svg>
+            <h3>Derecho Penal y litigación civil</h3>
+          </div>
           <p>
             Asistencia y defensa en procedimientos penales,
             tanto de personas investigadas como de perjudicados
@@ -708,7 +901,9 @@ de la página. Si ya existe, no la dupliques.
     </div>
   </section>
 
-  <!-- FILOSOFÍA DE TRABAJO -->
+  <!-- ===================================
+       FILOSOFÍA DE TRABAJO
+  ==================================== -->
 
   <section class="aa-section aa-approach">
     <div class="aa-container">
@@ -737,7 +932,9 @@ de la página. Si ya existe, no la dupliques.
     </div>
   </section>
 
-  <!-- CONTACTO -->
+  <!-- ===================================
+       CONTACTO
+  ==================================== -->
 
   <section class="aa-section aa-contact" id="contacto">
     <div class="aa-container">
@@ -756,26 +953,44 @@ de la página. Si ya existe, no la dupliques.
       </p>
 
       <p>
-        <strong>
-          Abeigón Abogados — Pontevedra
-        </strong>
+        <strong>Abeigón Abogados — Pontevedra</strong>
       </p>
 
       <div class="aa-contact-details">
 
-        <p>
-          Teléfono:
+        <!-- TELÉFONO -->
+
+        <div class="aa-contact-entry">
+          <svg class="aa-icon aa-icon-contact"
+               aria-hidden="true">
+            <use href="#aa-ico-phone"></use>
+          </svg>
           <a href="tel:+34671639376">
             671 639 376
           </a>
-        </p>
+        </div>
 
-        <p>
-          Correo electrónico:
+        <!-- CORREO ELECTRÓNICO -->
+
+        <div class="aa-contact-entry">
+          <svg class="aa-icon aa-icon-contact"
+               aria-hidden="true">
+            <use href="#aa-ico-mail"></use>
+          </svg>
           <a href="mailto:santiagoav@avogacia.org">
             santiagoav@avogacia.org
           </a>
-        </p>
+        </div>
+
+        <!-- UBICACIÓN -->
+
+        <div class="aa-contact-entry">
+          <svg class="aa-icon aa-icon-contact"
+               aria-hidden="true">
+            <use href="#aa-ico-map"></use>
+          </svg>
+          <span>Pontevedra</span>
+        </div>
 
       </div>
 
@@ -789,7 +1004,9 @@ de la página. Si ya existe, no la dupliques.
     </div>
   </section>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- ===================================
+       PIE DE PÁGINA
+  ==================================== -->
 
   <footer class="aa-footer">
     <div class="aa-container">
@@ -825,8 +1042,6 @@ de la página. Si ya existe, no la dupliques.
 
       </nav>
 
-      <!-- COPYRIGHT -->
-
       <p class="aa-copyright">
         © 2026 Abeigón Abogados.
         Todos los derechos reservados.
@@ -836,3 +1051,6 @@ de la página. Si ya existe, no la dupliques.
   </footer>
 
 </main>
+
+</body>
+</html>
