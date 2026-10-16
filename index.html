@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,6 +12,41 @@
 content="Despacho de abogados en Pontevedra. Asesoramiento y defensa en Derecho Civil, Familia, Herencias, Penal, reclamaciones bancarias y Segunda Oportunidad.">
 
 <link rel="stylesheet" href="assets/css/page.min.css">
+
+<!-- DATOS ESTRUCTURADOS SEO - ABEIGÓN ABOGADOS -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.abeigonabogados.com/#despacho",
+  "name": "Abeigón Abogados",
+  "description": "Despacho de abogados en Pontevedra dedicado al asesoramiento y defensa jurídica de particulares y empresas.",
+  "url": "https://www.abeigonabogados.com/",
+  "logo": "https://www.abeigonabogados.com/assets/img/logo-abeigon.svg",
+  "telephone": "+34671639376",
+  "email": "santiagoav@avogacia.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pontevedra",
+    "addressRegion": "Galicia",
+    "addressCountry": "ES"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Pontevedra"
+  },
+  "knowsAbout": [
+    "Derecho de Familia y filiación",
+    "Herencias y sucesiones",
+    "Derecho inmobiliario y desahucios",
+    "Accidentes de tráfico e indemnizaciones",
+    "Ley de Segunda Oportunidad",
+    "Reclamaciones bancarias",
+    "Phishing y estafas informáticas",
+    "Derecho Penal y litigación civil"
+  ]
+}
+</script>
 
 <style>
 
@@ -233,6 +267,49 @@ content="Despacho de abogados en Pontevedra. Asesoramiento y defensa en Derecho 
   line-height: 1.8;
   color: var(--aa-muted);
   margin-bottom: 0;
+}
+
+/* CONÓCENOS - PERFIL PROFESIONAL */
+
+.aa-home .aa-about {
+  text-align: center;
+}
+
+.aa-home .aa-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 36px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.aa-home .aa-person {
+  min-width: 0;
+  border-top: 1px solid var(--aa-line);
+  padding: 26px 18px 0;
+}
+
+.aa-home .aa-person h3 {
+  font-size: 23px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--aa-blue);
+  margin-bottom: 8px;
+}
+
+.aa-home .aa-person-role {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--aa-muted);
+  margin-bottom: 20px;
+}
+
+.aa-home .aa-person-summary {
+  max-width: 700px;
+  margin: 0 auto 27px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--aa-muted);
 }
 
 /* FILOSOFÍA */
@@ -509,6 +586,25 @@ content="Despacho de abogados en Pontevedra. Asesoramiento y defensa en Derecho 
   .aa-home .aa-copyright {
     font-size: 13.5px;
   }
+
+  /* CONÓCENOS EN MÓVILES */
+
+  .aa-home .aa-person {
+    padding: 22px 0 0;
+  }
+
+  .aa-home .aa-person h3 {
+    font-size: 22px;
+  }
+
+  .aa-home .aa-person-role {
+    font-size: 16px;
+  }
+
+  .aa-home .aa-person-summary {
+    font-size: 17.5px;
+    line-height: 1.75;
+  }
 }
 
 /* MÓVILES PEQUEÑOS */
@@ -552,40 +648,6 @@ content="Despacho de abogados en Pontevedra. Asesoramiento y defensa en Derecho 
 }
 
 </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "@id": "https://www.abeigonabogados.com/#despacho",
-  "name": "Abeigón Abogados",
-  "description": "Despacho de abogados en Pontevedra dedicado al asesoramiento y defensa jurídica de particulares y empresas.",
-  "url": "https://www.abeigonabogados.com/",
-  "logo": "https://www.abeigonabogados.com/assets/img/logo-abeigon.svg",
-  "telephone": "+34671639376",
-  "email": "santiagoav@avogacia.org",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Pontevedra",
-    "addressRegion": "Galicia",
-    "addressCountry": "ES"
-  },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Pontevedra"
-  },
-  "knowsAbout": [
-    "Derecho de Familia y filiación",
-    "Herencias y sucesiones",
-    "Derecho inmobiliario y desahucios",
-    "Accidentes de tráfico e indemnizaciones",
-    "Ley de Segunda Oportunidad",
-    "Reclamaciones bancarias",
-    "Phishing y estafas informáticas",
-    "Derecho Penal y litigación civil"
-  ]
-}
-</script>
 </head>
 
 <body style="margin:0">
@@ -932,6 +994,49 @@ PERFORMANCE OF THIS SOFTWARE.
         </article>
 
       </div>
+    </div>
+  </section>
+
+  <!-- ===================================
+       CONÓCENOS
+  ==================================== -->
+
+  <section class="aa-section aa-about" id="conocenos">
+    <div class="aa-container">
+
+      <svg class="aa-icon aa-icon-section"
+           aria-hidden="true">
+        <use href="#aa-ico-users"></use>
+      </svg>
+
+      <h2 class="aa-section-title">Conócenos</h2>
+
+      <div class="aa-rule"></div>
+
+      <div class="aa-team">
+        <article class="aa-person">
+
+          <h3>Santiago Abeigón Vidal</h3>
+
+          <p class="aa-person-role">
+            Abogado colegiado n.º 2.908 del Ilustre
+            Colegio de Abogados de Pontevedra.
+          </p>
+
+          <p class="aa-person-summary">
+            Su ejercicio profesional se basa en la atención
+            personal, el rigor jurídico y la independencia
+            de criterio, con una valoración realista de las
+            alternativas de cada asunto.
+          </p>
+
+          <a class="aa-button" href="/santiago-abeigon.html">
+            Conoce su perfil
+          </a>
+
+        </article>
+      </div>
+
     </div>
   </section>
 
