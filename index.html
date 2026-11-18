@@ -693,6 +693,103 @@ content="Despacho de abogados en Pontevedra. Asesoramiento y defensa en Derecho 
   }
 }
 
+
+/* Portada renovada: esta capa mantiene intactas las fichas de servicio y el SEO */
+.aa-home .aa-hero { padding:34px 0 12px; text-align:left; overflow:hidden; }
+.aa-home .aa-logo { margin-bottom:22px; }
+.aa-home .aa-logo img { width:360px; max-width:100%; height:auto; }
+.aa-home .aa-hero-stage {
+  position:relative; isolation:isolate; display:flex; align-items:center;
+  min-height:440px; padding:22px 0 38px;
+}
+.aa-home .aa-hero-visual {
+  position:absolute; z-index:-1; top:-12px; right:-24px; bottom:-12px; width:56%;
+  background-color:#f7f5f1;
+  background-image:
+    linear-gradient(90deg,#fff 0%,rgba(255,255,255,.9) 14%,rgba(255,255,255,.25) 48%,transparent 80%),
+    url("https://images.unsplash.com/photo-1771002469961-5447007e2896?auto=format&fit=crop&w=1000&q=72");
+  background-size:cover; background-position:center; background-repeat:no-repeat;
+  pointer-events:none;
+}
+.aa-home .aa-hero-copy { position:relative; z-index:1; max-width:700px; }
+.aa-home .aa-hero h1 {
+  font-size:clamp(34px,4.7vw,58px); font-weight:600; line-height:1.13;
+  letter-spacing:-.026em; margin:0 0 20px;
+}
+.aa-home .aa-hero-name {
+  margin:0 0 2px; font-size:clamp(24px,2.8vw,31px); line-height:1.3; font-weight:500;
+}
+.aa-home .aa-hero-name a { color:#123f60; text-decoration:none; }
+.aa-home .aa-hero-name a:hover { text-decoration:underline; text-underline-offset:4px; }
+.aa-home .aa-hero-credential { max-width:610px; margin:0; color:#687179; font-size:17px; line-height:1.5; }
+.aa-home .aa-hero-accent { height:3px; width:60px; background:#164566; margin:23px 0 20px; }
+.aa-home .aa-hero .aa-lead {
+  max-width:680px; margin:0 0 30px; font-size:19px; line-height:1.65; color:#394249;
+}
+.aa-home .aa-hero-button {
+  gap:12px; min-height:53px; padding:13px 25px;
+  background:#164566; border-color:#164566; font-size:16px;
+}
+.aa-home .aa-hero-button .aa-icon { width:21px; height:21px; }
+.aa-home section.aa-section#areas-de-practica { padding-top:22px; }
+.aa-home .aa-practice-heading { display:flex; align-items:center; gap:24px; margin-bottom:30px; }
+.aa-home .aa-practice-heading::before,
+.aa-home .aa-practice-heading::after { content:""; height:1px; background:#d5dde3; flex:1; }
+.aa-home .aa-practice-heading h2 {
+  margin:0; color:#4c5359; font-size:19px; font-weight:400;
+  line-height:1.4; letter-spacing:.16em; text-align:center; text-transform:uppercase;
+}
+.aa-home .aa-practice-nav {
+  display:grid; grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:0; margin:0 0 72px;
+}
+.aa-home .aa-practice-link {
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+  gap:13px; padding:8px 14px 14px; min-height:120px;
+  border-right:1px solid #d5dde3;
+  color:#25313a; font-size:16px; font-weight:500;
+  line-height:1.35; text-decoration:none; text-align:center;
+}
+.aa-home .aa-practice-link:last-child { border-right:none; }
+.aa-home .aa-practice-link .aa-icon { width:29px; height:29px; color:#164566; transition:transform .18s ease; }
+.aa-home .aa-practice-link:hover { color:#164566; }
+.aa-home .aa-practice-link:hover .aa-icon { transform:translateY(-3px); }
+@media screen and (max-width:980px) {
+  .aa-home .aa-hero-stage { min-height:410px; }
+  .aa-home .aa-hero-visual { width:52%; right:-22px; opacity:.64; }
+  .aa-home .aa-hero-copy { max-width:650px; }
+  .aa-home .aa-practice-nav { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .aa-home .aa-practice-link { border-bottom:1px solid #d5dde3; }
+  .aa-home .aa-practice-link:nth-child(3n) { border-right:none; }
+  .aa-home .aa-practice-link:nth-last-child(-n+3) { border-bottom:none; }
+}
+@media screen and (max-width:767px) {
+  .aa-home .aa-hero { padding:26px 0 8px; }
+  .aa-home .aa-logo { margin-bottom:24px; }
+  .aa-home .aa-logo img { width:min(100%,305px); }
+  .aa-home .aa-hero-stage { min-height:0; padding:12px 0 20px; }
+  .aa-home .aa-hero-visual { display:none; }
+  .aa-home .aa-hero h1 {
+    font-size:clamp(30px,7.5vw,41px); line-height:1.17; margin-bottom:19px;
+  }
+  .aa-home .aa-hero-name { font-size:25px; }
+  .aa-home .aa-hero-credential { font-size:15px; }
+  .aa-home .aa-hero-accent { margin:19px 0; }
+  .aa-home .aa-hero .aa-lead { font-size:17px; line-height:1.65; margin-bottom:25px; }
+  .aa-home .aa-hero-button { width:auto; min-height:51px; font-size:16px; }
+  .aa-home section.aa-section#areas-de-practica { padding-top:16px; }
+  .aa-home .aa-practice-heading { gap:12px; margin-bottom:22px; }
+  .aa-home .aa-practice-heading h2 { font-size:15px; letter-spacing:.12em; }
+  .aa-home .aa-practice-nav { grid-template-columns:repeat(2,minmax(0,1fr)); margin-bottom:45px; }
+  .aa-home .aa-practice-link { min-height:112px; padding:14px 10px; font-size:15px; }
+  .aa-home .aa-practice-link:nth-child(3n) { border-right:1px solid #d5dde3; }
+  .aa-home .aa-practice-link:nth-child(2n) { border-right:none; }
+  .aa-home .aa-practice-link:nth-last-child(3) { border-bottom:1px solid #d5dde3; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .aa-home .aa-practice-link .aa-icon { transition:none; }
+}
+
 </style>
 </head>
 
@@ -802,6 +899,12 @@ PERFORMANCE OF THIS SOFTWARE.
     <path d="M16 16a3 3 0 0 0 6 0"/>
   </symbol>
 
+  <!-- CALENDAR -->
+  <symbol id="aa-ico-calendar" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="18" height="16" rx="2"/>
+    <path d="M16 3v4M8 3v4M3 10h18"/>
+  </symbol>
+
   <!-- PHONE -->
   <symbol id="aa-ico-phone" viewBox="0 0 24 24">
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.34 1.91.65 2.81a2 2 0 0 1-.45 2.11L8.04 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.31 1.85.53 2.81.65A2 2 0 0 1 22 16.92z"/>
@@ -829,44 +932,25 @@ PERFORMANCE OF THIS SOFTWARE.
 
   <header class="aa-hero">
     <div class="aa-container">
-
       <div class="aa-logo">
         <a href="/" aria-label="Inicio - Abeigón Abogados">
-          <img
-            src="assets/img/logo-abeigon.svg"
-            alt="Abeigón Abogados"
-          >
+          <img src="assets/img/logo-abeigon.svg" alt="Abeigón Abogados &amp; Consultores" width="338" height="85">
         </a>
       </div>
-
-      <h1>Abogados en Pontevedra</h1>
-      <p class="aa-hero-identity">
-        <a href="/santiago-abeigon.html">Santiago Abeigón Vidal</a> · Abogado colegiado en Pontevedra
-      </p>
-
-      <p class="aa-lead">
-        Abogados en Pontevedra. Atención personalizada,
-        rigor profesional y defensa de tus derechos.
-      </p>
-
-      <p class="aa-lead">
-        Prestamos asesoramiento y defensa jurídica a
-        particulares y empresas en diferentes ámbitos
-        del Derecho, con un enfoque riguroso, práctico
-        y adaptado a las circunstancias de cada asunto.
-      </p>
-
-      <p class="aa-hero-focus">
-        Áreas destacadas:
-        <a href="/segunda-oportunidad.html">Ley de Segunda Oportunidad</a>,
-        <a href="/accidentes-trafico-indemnizaciones.html">indemnizaciones por accidentes de tráfico</a> y
-        <a href="/derecho-familia-filiacion.html">Derecho de Familia y Filiación</a>.
-      </p>
-
-      <a class="aa-button" href="#contacto">
-        Solicitar cita
-      </a>
-
+      <div class="aa-hero-stage">
+        <div class="aa-hero-visual" aria-hidden="true"></div>
+        <div class="aa-hero-copy">
+          <h1>Abogados en Pontevedra</h1>
+          <p class="aa-hero-name"><a href="/santiago-abeigon.html">Santiago Abeigón Vidal</a></p>
+          <p class="aa-hero-credential">Abogado colegiado n.º 2.908 del Ilustre Colegio de Abogados de Pontevedra</p>
+          <div class="aa-hero-accent" aria-hidden="true"></div>
+          <p class="aa-lead">Asesoramiento y defensa jurídica para particulares y empresas, con atención personalizada, rigor profesional y más de veinte años de experiencia.</p>
+          <a class="aa-button aa-hero-button" href="#contacto">
+            <svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-calendar"></use></svg>
+            Solicitar cita
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -876,20 +960,15 @@ PERFORMANCE OF THIS SOFTWARE.
 
   <section class="aa-section" id="areas-de-practica">
     <div class="aa-container">
-
-      <!-- ICONO DEL ENCABEZAMIENTO -->
-
-      <svg class="aa-icon aa-icon-section"
-           aria-hidden="true">
-        <use href="#aa-ico-briefcase"></use>
-      </svg>
-
-      <h2 class="aa-section-title">
-        Áreas de práctica
-      </h2>
-
-      <div class="aa-rule"></div>
-
+      <div class="aa-practice-heading"><h2>Áreas de práctica</h2></div>
+      <nav class="aa-practice-nav" aria-label="Especialidades jurídicas">
+        <a class="aa-practice-link" href="/segunda-oportunidad.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-refresh"></use></svg><span>Ley de Segunda Oportunidad</span></a>
+        <a class="aa-practice-link" href="/accidentes-trafico-indemnizaciones.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-car"></use></svg><span>Accidentes de tráfico</span></a>
+        <a class="aa-practice-link" href="/derecho-familia-filiacion.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-users"></use></svg><span>Familia y filiación</span></a>
+        <a class="aa-practice-link" href="/derecho-penal-litigacion-civil.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-scale"></use></svg><span>Derecho Penal</span></a>
+        <a class="aa-practice-link" href="/derecho-inmobiliario-desahucios.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-house"></use></svg><span>Inmobiliario y desahucios</span></a>
+        <a class="aa-practice-link" href="/reclamaciones-bancarias.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-landmark"></use></svg><span>Reclamaciones bancarias</span></a>
+      </nav>
       <div class="aa-grid">
 
         <!-- FAMILIA -->
