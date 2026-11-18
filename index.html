@@ -731,26 +731,26 @@ content="Despacho de abogados en Pontevedra. Asesoramiento y defensa en Derecho 
   line-height:1.4; letter-spacing:.16em; text-align:center; text-transform:uppercase;
 }
 .aa-home .aa-practice-nav {
-  display:grid; grid-template-columns:repeat(6,minmax(0,1fr));
-  gap:0; margin:0 0 72px;
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0; margin:0 0 54px;
 }
 .aa-home .aa-practice-link {
   display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
-  gap:13px; padding:8px 14px 14px; min-height:120px;
+  gap:13px; padding:18px 16px; min-height:125px;
   border-right:1px solid #d5dde3;
+  border-bottom:1px solid #d5dde3;
   color:#25313a; font-size:16px; font-weight:500;
   line-height:1.35; text-decoration:none; text-align:center;
 }
-.aa-home .aa-practice-link:last-child { border-right:none; }
+.aa-home .aa-practice-link:nth-child(4n) { border-right:none; }
+.aa-home .aa-practice-link:nth-last-child(-n+4) { border-bottom:none; }
 .aa-home .aa-practice-link .aa-icon { width:29px; height:29px; color:#164566; transition:transform .18s ease; }
 .aa-home .aa-practice-link:hover { color:#164566; }
 .aa-home .aa-practice-link:hover .aa-icon { transform:translateY(-3px); }
 @media screen and (max-width:980px) {
   .aa-home .aa-hero-copy { max-width:650px; }
-  .aa-home .aa-practice-nav { grid-template-columns:repeat(3,minmax(0,1fr)); }
-  .aa-home .aa-practice-link { border-bottom:1px solid #d5dde3; }
-  .aa-home .aa-practice-link:nth-child(3n) { border-right:none; }
-  .aa-home .aa-practice-link:nth-last-child(-n+3) { border-bottom:none; }
+  .aa-home .aa-practice-nav { grid-template-columns:repeat(4,minmax(0,1fr)); }
+  .aa-home .aa-practice-link { padding:15px 12px; font-size:15px; }
 }
 @media screen and (max-width:767px) {
   .aa-home .aa-hero { padding:26px 0 8px; }
@@ -770,9 +770,9 @@ content="Despacho de abogados en Pontevedra. Asesoramiento y defensa en Derecho 
   .aa-home .aa-practice-heading h2 { font-size:15px; letter-spacing:.12em; }
   .aa-home .aa-practice-nav { grid-template-columns:repeat(2,minmax(0,1fr)); margin-bottom:45px; }
   .aa-home .aa-practice-link { min-height:112px; padding:14px 10px; font-size:15px; }
-  .aa-home .aa-practice-link:nth-child(3n) { border-right:1px solid #d5dde3; }
   .aa-home .aa-practice-link:nth-child(2n) { border-right:none; }
-  .aa-home .aa-practice-link:nth-last-child(3) { border-bottom:1px solid #d5dde3; }
+  .aa-home .aa-practice-link:nth-last-child(-n+4) { border-bottom:1px solid #d5dde3; }
+  .aa-home .aa-practice-link:nth-last-child(-n+2) { border-bottom:none; }
 }
 @media (prefers-reduced-motion:reduce) {
   .aa-home .aa-practice-link .aa-icon { transition:none; }
@@ -949,12 +949,14 @@ PERFORMANCE OF THIS SOFTWARE.
     <div class="aa-container">
       <div class="aa-practice-heading"><h2>Áreas de práctica</h2></div>
       <nav class="aa-practice-nav" aria-label="Especialidades jurídicas">
+        <a class="aa-practice-link" href="/derecho-familia-filiacion.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-users"></use></svg><span>Derecho de Familia y filiación</span></a>
+        <a class="aa-practice-link" href="/herencias-sucesiones.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-scroll"></use></svg><span>Herencias y sucesiones</span></a>
+        <a class="aa-practice-link" href="/derecho-inmobiliario-desahucios.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-house"></use></svg><span>Derecho inmobiliario y desahucios</span></a>
+        <a class="aa-practice-link" href="/accidentes-trafico-indemnizaciones.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-car"></use></svg><span>Accidentes de tráfico e indemnizaciones</span></a>
         <a class="aa-practice-link" href="/segunda-oportunidad.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-refresh"></use></svg><span>Ley de Segunda Oportunidad</span></a>
-        <a class="aa-practice-link" href="/accidentes-trafico-indemnizaciones.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-car"></use></svg><span>Accidentes de tráfico</span></a>
-        <a class="aa-practice-link" href="/derecho-familia-filiacion.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-users"></use></svg><span>Familia y filiación</span></a>
-        <a class="aa-practice-link" href="/derecho-penal-litigacion-civil.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-scale"></use></svg><span>Derecho Penal</span></a>
-        <a class="aa-practice-link" href="/derecho-inmobiliario-desahucios.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-house"></use></svg><span>Inmobiliario y desahucios</span></a>
         <a class="aa-practice-link" href="/reclamaciones-bancarias.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-landmark"></use></svg><span>Reclamaciones bancarias</span></a>
+        <a class="aa-practice-link" href="/phishing-estafas-informaticas.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-shield"></use></svg><span>Phishing y estafas informáticas</span></a>
+        <a class="aa-practice-link" href="/derecho-penal-litigacion-civil.html"><svg class="aa-icon" aria-hidden="true"><use href="#aa-ico-scale"></use></svg><span>Derecho Penal y litigación civil</span></a>
       </nav>
       <div class="aa-grid">
 
